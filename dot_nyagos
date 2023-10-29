@@ -1,0 +1,15 @@
+nyagos.alias.la = "ls -a  $*"
+nyagos.alias.ll = "ls -al $*"
+nyagos.alias.clear = "cls"
+nyagos.alias.gf = "cd $( ghq list -p | peco )"
+
+nyagos.alias.kc = function(args)
+
+  if args[1] == "stop" then
+    nyagos.eval("komorebic stop")
+  
+  elseif args[1] == "start" or #args == 0 then
+    nyagos.eval("powershell Start-Process 'komorebi.exe' -WindowStyle hidden")
+  end
+
+end
