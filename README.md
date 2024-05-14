@@ -1,11 +1,11 @@
-# dotflies
+# dotfiles
 
-## dotflieの追加
+## dotfileの追加
 ```bash
 chezmoi add .dot_file
 ```
 
-## dotflieの編集
+## dotfileの編集
 ```bash
  chezmoi edit .dot_file
 ```
